@@ -165,5 +165,4 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 
-# razor_pay_key_id = 'rzp_test_Dqvc5VVKB7Gqi9'
-# key_secret = 'VmgHnzoeQQ1nWb7eEsQlTAxP'
+
