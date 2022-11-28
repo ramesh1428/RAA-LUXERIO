@@ -34,7 +34,7 @@ def hotel_billing(request,id=id,user_id=id):
         total_amount=int(price) * int(rooms)
         print(int(total_amount))
         order_id=request.POST.get('order_id')
-        client = razorpay.Client(auth=("rzp_test_Dqvc5VVKB7Gqi9","VmgHnzoeQQ1nWb7eEsQlTAxP"))
+        client = razorpay.Client(auth=("****************","***************"))
         payment_id= client.order.create({'amount':total_amount,'currency':'INR', 'payment_capture':'1'})
         print(payment_id)
         book_hotel = HotelBooking(hotel_name=hotel_name,price=price,from_date=from_date,to_date=to_date,rooms=rooms,fk_id=id,order_id=order_id,payment_id=payment_id['id'],user_id=usid,total_amount=total_amount)
