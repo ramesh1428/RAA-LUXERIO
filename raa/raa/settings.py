@@ -89,11 +89,11 @@ WSGI_APPLICATION = 'raa.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hotelapp',
-        'USER': 'root',
-        'PASSWORD': 'rahim1414',
+        'NAME': 'DATABASE NAME',
+        'USER': 'username',
+        'PASSWORD': '*******',
         'HOST':'localhost',
-        'PORT':'3306',
+        'PORT':'port',
     }
 }
 
